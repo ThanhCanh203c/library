@@ -288,7 +288,7 @@
     width: 100%;
     min-height: 120px;
     margin-top: 80px;
-    background-color: transparent;
+    background-color: #fff;
     border-top: 2px solid var(--black-color);
     display: flex;
     justify-content: center;
