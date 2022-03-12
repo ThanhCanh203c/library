@@ -280,11 +280,11 @@
 /* Footer */
 .footer {
     width: 100%;
-    min-height: 120px;
-    margin-top: 80px;
-    background-color: var(--white-color);
     border-top: 2px solid var(--black-color);
+    min-height: 120px;
     display: flex;
+    margin-top: 80px;
+    background-color: #fff;
     justify-content: center;
     align-items: center;
 }
