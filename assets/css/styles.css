@@ -126,9 +126,6 @@
     margin-top: calc(var(--header-height) + 24px);
 }
 
-.header__content {
-}
-
 .content__img-wrap {
     border: 2px solid var(--black-color);
     background-position: top center;
@@ -217,9 +214,6 @@
 }
 
 /* content page */
-.content__page {
-}
-
 .page-item  {
     border-radius: 12px;
     background-color: var(--white-color);
