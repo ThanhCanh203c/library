@@ -25,6 +25,7 @@
     }
 
     .content__body {
+        margin-top: 32px;
         justify-content: center;
     }
 
