@@ -1,0 +1,38 @@
+@media (max-width: 739px) {
+    .header__top {
+        justify-content: center;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .content__img-wrap {
+        margin: 0 auto;
+    }
+
+    .content__header {
+        align-items: center;
+    }
+
+    .content__heading {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .content__category {
+        display: none;
+    }
+
+    .content__body {
+        justify-content: center;
+    }
+
+    .page-item {
+        margin-top: 24px;
+    }
+
+    .author {
+        font-size: 1.5rem;
+    }
+}
