@@ -1,4 +1,4 @@
-@media (max-width: 739px) {
+@media (max-width: 1023px) {
     .header__top {
         justify-content: center;
         align-items: center;
@@ -10,7 +10,7 @@
 
     .content__img-wrap {
         margin: 0 auto;
-        padding-left: 50%;
+        padding-left: 56%;
     }
 
     .content__header {
