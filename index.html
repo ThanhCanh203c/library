@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon"
-        href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f499.svg"
+    <link rel="icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f499.svg"
         type="image/icon type">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -26,6 +25,9 @@
         <div class="header">
             <div class="grid wide">
                 <div class="header__top">
+                    <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                        <i class="header__mobile-menu-icon fa-solid fa-bars"></i>
+                    </label>
                     <a href="" class="header__name-link">
                         <p class="header__name-page">
                             <span class="name-thanh">
@@ -45,7 +47,7 @@
                         </p>
                     </a>
                     <nav class="header__nav">
-                        <ul class="nav__list">
+                        <ul class="nav__list hide-on-mobile-tablet">
                             <li class="nav__item nav__item--active">
                                 <a href="" class="nav__item-link">HOME</a>
                             </li>
@@ -64,7 +66,7 @@
                                     </li>
                                     <li class="float-box__item">
                                         <a class="float-box__item-link" href="#">
-                                            Bài viết
+                                            Blog
                                         </a>
                                     </li>
                                 </ul>
@@ -90,11 +92,25 @@
             </div>
         </div>
 
+        <input type="checkbox" name="" id="mobile-menu-checkbox" class="mobile__menu-input">
+        <ul class="mobile__menu">
+            <h5 class="mobile__menu-heading">MENU</h5>
+            <li class="mobile__menu-item">
+                <a href="" class="mobile__menu-item-link">Phần mềm</a>
+            </li>
+            <li class="mobile__menu-item">
+                <a href="" class="mobile__menu-item-link">Website</a>
+            </li>
+            <li class="mobile__menu-item">
+                <a href="" class="mobile__menu-item-link">Blog</a>
+            </li>
+        </ul>
+
         <div class="content">
             <div class="grid wide">
                 <div class="header__content row">
-                    <div class="content__img-wrap col l-2  c-6" style="background-image: url(./assets/img/thanhcanh.jpg)"
-                        title="Thanh Cảnh cùng Eiu">
+                    <div class="content__img-wrap col l-2  c-6"
+                        style="background-image: url(./assets/img/thanhcanh.jpg)" title="Thanh Cảnh cùng Eiu">
                     </div>
                     <div class="content__header col l-10 c-12">
                         <h1 class="content__heading">Trang Chủ</h1>
@@ -102,7 +118,7 @@
                     </div>
                 </div>
                 <div class="content__body row">
-                    <div class="content__category col l-2">
+                    <div class="content__category hide-on-mobile-tablet col l-2">
                         <h3 class="category-heading">
                             <i class="fa-solid fa-list-ul"></i>
                             DANH MỤC
@@ -120,7 +136,7 @@
                             </li>
                             <li class="category__item">
                                 <a href="" class="category__item-link">
-                                    Bài viết
+                                    Blog
                                 </a>
                             </li>
                         </ul>
@@ -145,7 +161,8 @@
 
                             <div class="col l-3 c-12">
                                 <div class="page-item">
-                                    <a href="https://thanhcanh203c.github.io/TheBand.github.io/" class="page-item__link">
+                                    <a href="https://thanhcanh203c.github.io/TheBand.github.io/"
+                                        class="page-item__link">
                                         <div class="page-item__img-wrap"
                                             style="background-image: url(https://luv.vn/wp-content/uploads/2021/08/hinh-anh-gai-xinh-2.jpg)">
                                         </div>
@@ -161,7 +178,8 @@
 
                             <div class="col l-3 c-12">
                                 <div class="page-item">
-                                    <a href="https://thanhcanh.notion.site/English-vocabulary-21d9ac27924240a8bab97027f138c991" class="page-item__link">
+                                    <a href="https://thanhcanh.notion.site/English-vocabulary-21d9ac27924240a8bab97027f138c991"
+                                        class="page-item__link">
                                         <div class="page-item__img-wrap"
                                             style="background-image: url(https://kenh14cdn.com/thumb_w/660/2020/5/28/0-1590653959375414280410.jpg)">
                                         </div>
