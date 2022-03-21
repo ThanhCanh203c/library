@@ -125,6 +125,18 @@
     margin-right: 4px;
 }
 /* Mobile menu */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+    animation: FadeIn ease .4s;
+}
+
 .header__mobile-menu {
     display: none;
     position: absolute;
@@ -149,7 +161,8 @@
 }
 
 
-.mobile__menu-input:checked ~ .mobile__menu {
+.mobile__menu-input:checked ~ .mobile__menu,
+.mobile__menu-input:checked ~ .modal {
     display: block;
 }
 
@@ -276,7 +289,7 @@
     will-change: transform;
     transition: transform linear .1s;
     margin-bottom: 12px;
-    overflow: hidden;
+    position: relative;
 }
 
 .page-item:hover {
@@ -317,12 +330,13 @@
 
 
 .page-item__type {
-    margin-top: 8px;
-    display: inline-block;
     padding: 2px 8px;
     color: var(--white-color);
-    border-radius: 11px;
+    position: absolute;
+    top: 20px;
+    left: -4px;
 }
+
 .page-item__type--software {
     background-color: #4CAF50;
 }

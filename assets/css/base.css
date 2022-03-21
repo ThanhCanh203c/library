@@ -24,3 +24,13 @@ html {
 body {
     background-image: url(../img/background.png);
 }
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
