@@ -59,4 +59,9 @@
             transform: translateX(0);
         }
     }
+
+    .page-item {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
 }
