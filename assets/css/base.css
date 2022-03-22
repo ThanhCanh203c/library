@@ -1,0 +1,36 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #00C853;
+    --text-color: #424242;
+
+    --header-height: 54px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-image: url(../img/background.png);
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
