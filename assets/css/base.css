@@ -1,0 +1,62 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #BDBDBD;
+    --primary-color: #424242;
+    --hover-color: #757575;
+    
+    --header-height: 64px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Comfortaa', cursive;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+    width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #616161;
+    /* Màu nền ngoài của thanh scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 50px;
+}
+
+/* ANIMATION */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+    
+}
+
+
+@keyframes topScaleDown {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

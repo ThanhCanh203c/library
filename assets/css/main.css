@@ -1,0 +1,358 @@
+.main {
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    height: var(--header-height);
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header__nav {
+    display: block;
+}
+
+.header__nav-list {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header__nav-item {
+    position: relative;
+}
+
+.header__nav-item-link {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__nav-item-link:hover 
+.facebook-mini-page {
+    display: block;
+}
+
+.header__nav-item-link i{
+    font-size: 2.6rem;
+    padding: 19px;
+}
+
+.header__name-page {
+    display: block;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.header__name-page:hover {
+    background-color: var(--hover-color);
+    transition: all linear .3s;
+}
+
+.header__nav-item-link:hover i {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    transition: all linear .1s;
+}
+
+/* FB mini page */
+.facebook-mini-page {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: calc(50% - 80px);
+    width: 160px;
+    background-color: var(--white-color);
+    min-height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    padding-bottom: 20px;
+    display: none;
+    animation: topScaleDown ease .3s;
+    transform-origin: top center;
+}
+
+.facebook-mini-page::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: transparent;
+}
+
+.facebook_background {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: cover;
+}
+
+.facebook__img {
+    width: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.facebook__name {
+    text-align: center;
+    margin-top: -24px;
+    color: var(--black-color);
+    font-size: 1.4rem;
+}
+
+/* MENU */
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.menu__checkbox:checked ~ .menu__list,
+.menu__checkbox:checked ~ .overlay {
+    display: block;
+}
+
+.menu__list {
+    position: fixed;
+    top: var(--header-height);
+    bottom: 0;
+    width: 35vw;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+    padding-left: 150px;
+    padding-top: 32px;
+    list-style: none;
+    display: none;
+    animation: slideInLeft ease-out .3s;
+    will-change: transform;
+    z-index: 1;
+}
+
+.menu__close-btn {
+    position: absolute;
+    font-size: 24px;
+    top: 2px;
+    right: 0;
+    padding: 4px 16px;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.menu__close-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.menu__item-link {
+    padding: 12px 8px 8px;
+    display: block;
+    line-height: 1.2;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.menu__item-link:hover {
+    background-color: rgb(157, 156, 156);;
+    color: var(--primary-color);
+    font-weight: 550;
+    padding-left: 12px;
+    transition: all linear .2s;
+}
+
+/* CONTENT */
+.content {
+    background-color: #616161;
+}
+
+/* Header */
+.header-content {
+    margin-top: var(--header-height);
+    padding-top: 42px;
+    text-align: center;
+}
+
+.header-content__heading {
+    font-size: 3rem;
+    color: #FFC107;
+}
+
+.header-content__sub-heading {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-top: 12px;
+}
+
+
+/* Main */
+
+.main-content {
+    padding-bottom: 128px;
+}
+
+/* Page List */
+.page__list {
+    padding-top: 84px;
+}
+
+.page__list-type {
+    width: 100%;
+    padding: 16px 0 12px;
+    padding-left: 8px;
+    font-size: 3rem;
+    font-weight: 400;
+    border-bottom: 3px solid currentColor;
+    margin-bottom: 16px;
+}
+
+.page__list:nth-of-type(3n + 1) .page__list-type {
+    color: #42A5F5;
+}
+
+.page__list:nth-of-type(3n + 2) .page__list-type {
+    color: #4CAF50;
+}
+
+.page__list:nth-of-type(3n + 3) .page__list-type {
+    color: #FFA726;
+}
+
+.page__item {
+    padding: 8px 8px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #424242;
+    outline: none;
+}
+
+.page__item:hover {
+    transform: translateY(-1px);
+    transition: transform .1s linear;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.page__item-link {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.page__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.page__name {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 12px;
+    word-spacing: 6px;
+    line-height: 2.2rem;
+    height: 4.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.page__date-update {
+    font-size: 1.6rem;
+    color: #66BB6A;
+    margin: 8px 0;
+}
+
+.page__desc {
+    color:var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    text-align: justify;
+    overflow: hidden;
+    margin-bottom: 8px;
+    height: calc(1.8 * 4rem);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.page__list-no-item {
+    font-size: 2.2rem;
+    color: var(--text-color);
+}
+
+/* ABOUT */
+.about {
+    padding: 90px 0 64px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.about__heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.about__img {
+    width: 100%;
+    filter: grayscale(50%);
+    display: block;
+}
+
+.about__body {
+    margin-top: 32px;
+}
+
+.about__body-heading {
+    font-size: 2rem;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.about__body-sub-heading {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.about__body-desc {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 64px 0;
+    color: var(--text-color);
+}
+
+.copyright {
+    font-size: 2.2rem;
+}
