@@ -1,67 +1,96 @@
-@media (max-width: 1023px) {
-    .hide-on-mobile-tablet {
-        display: none;
-    }
-
-    .header__top {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content__img-wrap {
-        margin: 0 auto;
-        padding-left: 56%;
-    }
-
-    .content__header {
-        align-items: center;
-    }
-
-    .content__heading {
-        margin-left: 0;
-        margin-top: 12px;
-    }
-
-    .content__body {
-        justify-content: center;
-    }
-
-    .page-item {
-        margin-top: 24px;
-    }
-
-    .author {
-        font-size: 1.5rem;
-    }
-}
-
+/* MOBILE */ 
 @media (max-width: 739px) {
     .hide-on-mobile {
+        display: none!important;
+    }
+
+    .header__nav-item-link {
+        font-size: 1.8rem;
+    }
+
+    .header__nav-item-link:hover .facebook-mini-page {
         display: none;
     }
 
-    .header__mobile-menu {
-        display: block;
+    .header-content__heading {
+        font-size: 2.2rem;
     }
 
-    .mobile__menu {
-        animation: mobileMenuSlideInLeft ease .3s;
+    .header-content__sub-heading {
+        font-size: 1.8rem;
     }
 
-    @keyframes mobileMenuSlideInLeft {
-        from {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
+    .menu__list {
+        padding-left: 0;
+        width: 60vw;
     }
 
-    .page-item {
+    .menu__item-link {
+        padding-left: 20px;
+        font-size: 2rem;
+    }
+
+    .menu__item-link:hover {
+        padding-left: 24px;
+    }
+
+    .page__list {
+        padding: 74px 8px 0;
+    }
+
+    .page__list-type {
+        font-size: 2.2rem;
+        padding-left: 0;
+    }
+
+    .page__list-no-item {
+        font-size: 1.6rem;
+    }
+
+    .page__item {
         margin-top: 8px;
-        margin-bottom: 8px;
+    }
+
+    .page__img {
+        height: 200px;
+    }
+    
+    .page__name {
+        font-size: 1.6rem;
+        word-spacing: 2px;
+    }
+
+    .page__date-update {
+        font-size: 1.4rem;
+    }
+
+    .page__desc {
+        font-size: 1.2rem;
+    }
+
+    
+    .about__body {
+        padding: 0 8px;
+    }
+    
+    .about__heading {
+        font-size: 2rem;
+    }
+
+    .about__body-sub-heading {
+        font-size: 1.6rem;
+    }
+
+    .about__body-desc {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    .footer {
+        padding: 32px 0;
+    }
+
+    .copyright {
+        font-size: 1.4rem;
     }
 }
