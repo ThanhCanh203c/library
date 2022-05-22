@@ -38,12 +38,11 @@
     cursor: pointer;
 }
 
-.header__nav-item-link:hover 
-.facebook-mini-page {
+.header__nav-item-link:hover .facebook-mini-page {
     display: block;
 }
 
-.header__nav-item-link i{
+.header__nav-item-link i {
     font-size: 2.6rem;
     padding: 19px;
 }
@@ -130,8 +129,8 @@
     z-index: 0;
 }
 
-.menu__checkbox:checked ~ .menu__list,
-.menu__checkbox:checked ~ .overlay {
+.menu__checkbox:checked~.menu__list,
+.menu__checkbox:checked~.overlay {
     display: block;
 }
 
@@ -176,7 +175,8 @@
 }
 
 .menu__item-link:hover {
-    background-color: rgb(157, 156, 156);;
+    background-color: rgb(157, 156, 156);
+    ;
     color: var(--primary-color);
     font-weight: 550;
     padding-left: 12px;
@@ -246,6 +246,43 @@
     border-radius: 4px;
     background-color: #424242;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.page__tag {
+    position: absolute;
+    background-color: #66BB6A;
+    top: 30px;
+    left: -4px;
+    line-height: 1;
+    padding: 4px 8px 3px;
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.page__tag::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #4c8a4f;
+    border-width: 2px;
+    border-color: currentColor currentColor transparent transparent;
+    border-style: solid;
+}
+
+.page__tag::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    color: rgb(102, 187, 106);
+    border-width: 10px 8px 9px 0px;
+    border-color: currentcolor transparent;
+    border-style: solid;
 }
 
 .page__item:hover {
@@ -286,7 +323,7 @@
 }
 
 .page__desc {
-    color:var(--text-color);
+    color: var(--text-color);
     font-size: 1.3rem;
     font-weight: 300;
     line-height: 1.8rem;
@@ -319,7 +356,7 @@
 
 .about__img {
     width: 100%;
-    filter: grayscale(50%);
+    filter: saturate(110%);
     border: 2px solid var(--primary-color);
     display: block;
     border-radius: 20px;
