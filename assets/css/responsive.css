@@ -1,4 +1,4 @@
-/* MOBILE AND TABLET */ 
+/* MOBILE AND TABLET */
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
         display: none;
@@ -7,7 +7,7 @@
     .menu__close-btn {
         -webkit-tap-highlight-color: transparent;
     }
-    
+
     .menu__close-btn:hover {
         background-color: var(--primary-color);
     }
@@ -40,10 +40,10 @@
     }
 }
 
-/* MOBILE */ 
+/* MOBILE */
 @media (max-width: 739px) {
     .hide-on-mobile {
-        display: none!important;
+        display: none !important;
     }
 
     .header__nav-item-link {
@@ -105,7 +105,7 @@
     .page__img {
         height: 200px;
     }
-    
+
     .page__name {
         font-size: 1.6rem;
         word-spacing: 2px;
@@ -118,7 +118,7 @@
     .page__desc {
         font-size: 1.2rem;
     }
-    
+
     .about__img {
         border-radius: 0;
     }
@@ -126,7 +126,7 @@
     .about__body {
         padding: 0 8px;
     }
-    
+
     .about__heading {
         font-size: 2rem;
     }
